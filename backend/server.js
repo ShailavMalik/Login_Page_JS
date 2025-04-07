@@ -24,7 +24,7 @@ app.get("", (req, res) => {
 });
 
 // Use form-related routes under the "/api/form" path
-app.use("/api/form", formRoutes);
+app.use("/api/auth", formRoutes);
 
 const PORT = process.env.PORT || 5000; // Define the port from environment variables or default to 5000
 
